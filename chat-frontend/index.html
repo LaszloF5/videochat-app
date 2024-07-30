@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Videochat app</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="js-container"></div>
-    <select class="js-input-devices" name="input-devices"></select>
-    <button class="js-start-stream">Start</button>
-    <button class="js-stop-stream">Stop</button>
+    <h1>Videochat app</h1>
+    <div class="container js-container"></div>
+    <div class="second-container">
+      <select class="js-input-devices" name="input-devices"></select>
+      <div class="inside-container">
+        <button class="btn btn-start js-start-stream">Start</button>
+        <button class="btn btn-stop js-stop-stream">Stop</button>
+      </div>
+    </div>
     <script src="./lib/socket.io.js"></script>
     <script src="./client.js"></script>
   </body>
